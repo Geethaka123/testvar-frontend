@@ -1,0 +1,134 @@
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh; /* Limit the modal height */
+    overflow-y: auto; /* Add vertical scroll */
+  }
+  
+  h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #2ed573; /* Green border when focused */
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .cards-section {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .card input[type="text"] {
+    width: 100%;
+  }
+  
+  .card label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.save {
+    background-color: #2ed573;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  button.cancel {
+    background-color: #ff4757;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button.save:hover {
+    background-color: #1e9b4e; /* Darker green on hover */
+  }
+  
+  button.cancel:hover {
+    background-color: #e84118; /* Darker red on hover */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Scrollbar styling */
+  .modal::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .modal::-webkit-scrollbar-thumb {
+    background-color: #2ed573;
+    border-radius: 8px;
+  }
+  
+  .modal::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  

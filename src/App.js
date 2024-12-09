@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { AuthProvider } from "./context/authContext";
+import Register from "./components/RegisterForm";
+import Login from "./components/LoginForm";
+import FlashcardList from "./components/FashCardList";
+import Home from "./pages/Home";
+import "./App.css";
+import FlashcardForm from "./components/CreateFashCardList";
+import FlashcardDetail from "./components/FlashcardDetail";
+import AdminDashboard from "./pages/AdminDashboard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+
+          <Route path="/flashcards" element={<FlashcardList />} />
+          <Route path="/flashcard/:id" element={<FlashcardDetail />} />
+          <Route path="/flashcards/create" element={<FlashcardForm />} />
+
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
+
+        </Routes>
+      </AuthProvider>
+    </Router>
   );
-}
+};
 
 export default App;

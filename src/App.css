@@ -1,38 +1,52 @@
-.App {
+.home-container {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  padding: 40px;
+  background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+  font-family: 'Arial', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.home-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.home-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-button .icon {
+  font-size: 1.5rem;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }

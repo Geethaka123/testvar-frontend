@@ -1,0 +1,109 @@
+/* General Container */
+.flashcard-form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .success-message {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Form Elements */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  textarea.input-field {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Buttons */
+  .add-button, .remove-button, .submit-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .remove-button {
+    background-color: #f44336;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .remove-button:hover {
+    background-color: #da190b;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+    cursor: not-allowed;
+  }
+  
+  /* Card Container */
+  .card {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .card .form-group {
+    margin-bottom: 10px;
+  }
+  
